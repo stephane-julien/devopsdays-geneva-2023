@@ -5,7 +5,6 @@ helm:
   chart: keycloak
   version: 0.1.0
   releaseName: keycloak
-  # TODO: replace your@own.email with your email address
   values:
     registration:
-      emailAddress: your@own.email
+      emailAddress: stephane.julien@jura.ch

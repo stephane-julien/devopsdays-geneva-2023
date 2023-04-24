@@ -20,17 +20,16 @@ helm:
       className: nginx
 targetCustomizations:
   - name: demo
-    # TODO: update W.X.Y.Z to your external IP address (look at Ingress Controller)
     helm:
       values:
         front:
-          host: sales-portal.W.X.Y.Z.sslip.io
+          host: sales-portal.3.250.122.183.sslip.io
           tag: 1.0.4768413825
         adapter:
-          host: crm-adapter.W.X.Y.Z.sslip.io
+          host: crm-adapter.3.250.122.183.sslip.io
           tag: 1.0.4768413825
         data:
-          host: crm-data.W.X.Y.Z.sslip.io
+          host: crm-data.3.250.122.183.sslip.io
           tag: 1.0.4768413825
           db:
             connectionString: mongodb://root:admin@devpro-salesportal-mongodb:27017/sales-portal?authSource=admin
